@@ -1,0 +1,56 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "realization": "api/controllers/JokesMainController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/load": {
+        "realization": "api/controllers/JokesMainController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "realization": "api/controllers/JokesMainController.loadBasicData",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "sayHello": {
+        "realization": "api/controllers/SayHelloController.sayHello",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sayMeHello": {
+        "realization": "api/controllers/SayHelloController.sayMeHello",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sayHello/get": {
+        "realization": "api/controllers/SayHelloController.getHello",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sayHello/list": {
+        "realization": "api/controllers/SayHelloController.listHello",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sayHello/delete": {
+        "realization": "api/controllers/SayHelloController.deleteHello",
+        "httpMethod": "POST",
+        "type": "CMD"
+      }
+    }
+  }
+}
